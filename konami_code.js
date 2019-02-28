@@ -17,7 +17,7 @@ function init() {
 
   document.body.addEventListener("keystroke", (e) => {
     const key = e.key;
-    cheat = (codes[cheat] === key) ? cheat++ : 0
+    cheat = (codes[cheat] === key) ? ++cheat : 0
 
     if (cheat === codes.length) {
       window.alert("Hurray!");
