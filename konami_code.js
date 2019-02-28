@@ -15,7 +15,7 @@ function init() {
   // your code here
   let cheat = 0;
 
-  document.body.addEventListener("keystroke", (e) => {
+  document.body.addEventListener("keydown", (e) => {
     const key = e.key;
     cheat = (codes[cheat] === key) ? ++cheat : 0
 
